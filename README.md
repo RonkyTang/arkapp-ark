@@ -12,7 +12,12 @@
   Every claim below must stay consistent with
   documents/GTM/website/WEBSITE_CONTENT_RATIONALE.md section 5: no unverified
   numbers, no competitor comparisons without a source and a date.
+
+  Translations live in README.zh-CN.md and README.ja.md. The three files carry
+  the same claims, sections, and links; when one changes, change all three.
 -->
+
+**English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
 # Ark — an AI-native terminal and SSH client
 
