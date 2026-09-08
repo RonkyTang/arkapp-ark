@@ -1,13 +1,7 @@
 <!--
-  Deliverable, not this repo's README.
-
-  Copy this file into the public repo (suggested: github.com/arkapp/ark) as its
-  README.md. That repo carries documentation and issues only; Ark is closed
-  source, so no application code goes there.
-
-  Why it exists: github.com pages rank well and are often the first result for a
-  tool's name, and a public issue tracker keeps producing indexable content. See
-  documents/GTM/SEO_OFFSITE_CHECKLIST.md, section P0.
+  Aligned copy for GitHub README claims. 2026-09-08 product decision: do not
+  create a separate github.com/arkapp/ark. The currently public git README is
+  already used for SEO.
 
   Every claim below must stay consistent with
   documents/GTM/website/WEBSITE_CONTENT_RATIONALE.md section 5: no unverified
@@ -70,6 +64,9 @@ still a terminal you can work in every day.
   separates what it verified from what it is still unsure about.
 - **Bring your own model key** — configure custom models so the provider and the
   API key stay under your control.
+- **Local experience cards** — after a task, you can save distilled notes on
+  this device. They stay encrypted here, bound to your account and this host,
+  and are used only as investigation leads.
 - **Interface languages** — English, 简体中文, 日本語.
 
 ## Control and credentials
@@ -101,6 +98,16 @@ Download the installer for your system from
 Ark checks for new versions and can install updates from inside the app, so you
 do not need to download manually after the first install.
 
+## Pricing
+
+| Plan | Price | Includes |
+| --- | --- | --- |
+| Free | $0 | Sign-in, SSH / CLI sessions, SFTP file transfer, unlimited connected hosts, local history, multi-device sign-in (no sync) |
+| Basic | $1.99 / month | Everything in Free, the agent and single-server cockpit, custom models with your own API key, local experience cards (encrypted on this device, per host) |
+| Pro | $4.99 / month | Everything in Basic. Cloud sync, cross-server work, scheduled tasks, MCP and Skills are planned for this plan and not available yet. |
+
+Register by November 30, 2026 to receive a free Basic trial. Without a
+subscription the account returns to Free.
 
 ## FAQ
 
@@ -110,7 +117,7 @@ agent that works from the server you already connected to.
 
 **Can I use Ark without the AI features?**
 Yes. The Free plan covers SSH and CLI sessions, SFTP file transfer, unlimited
-connected hosts, and local history.
+connected hosts, local history, and multi-device sign-in without cloud sync.
 
 **Where are my SSH keys stored?**
 On your device. Private keys, passwords, and custom model API keys are not
@@ -131,5 +138,6 @@ Not yet. macOS and Windows x64 are the published targets.
 
 ---
 
-Ark is released English-first for users in the United States. It is not promoted
-or listed in mainland China app stores; access to the website is not blocked.
+Ark is available worldwide. The default language is English, with Simplified
+Chinese and Japanese. It is not promoted or listed in mainland China app
+stores; access to the website and use of the product are not blocked.
