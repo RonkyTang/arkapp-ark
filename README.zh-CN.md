@@ -1,13 +1,13 @@
 <!--
-  Deliverable, not this repo's README.
-
-  Simplified Chinese translation of README.md. Copy into the public repo
-  (suggested: github.com/arkapp/ark) as README.zh-CN.md.
+  Aligned Simplified Chinese copy. 2026-09-08 product decision: do not create
+  a separate github.com/arkapp/ark. The currently public git README is already
+  used for SEO.
 
   The three language files carry the same claims, sections, and links; when one
   changes, change all three. Every claim must stay consistent with
   documents/GTM/website/WEBSITE_CONTENT_RATIONALE.md section 5: no unverified
   numbers, no competitor comparisons without a source and a date.
+-->
 -->
 
 [English](README.md) · **简体中文** · [日本語](README.ja.md)
@@ -53,6 +53,7 @@ Ark 是一个面向远程服务器的 SSH 客户端和终端，内置的 AI 智�
 - **AI 智能体** —— 读取实时服务器状态，跨步骤追踪证据，并且把已验证的结论和尚不确定的
   部分分开呈现。
 - **使用你自己的模型密钥** —— 可配置自定义模型，供应商和 API 密钥都掌握在你自己手里。
+- **本机经验卡片** —— 任务结束后可以把提炼出的经验保存在本机。加密只存在这台设备上，绑定当前账号和当前主机，只作为调查线索使用。
 - **界面语言** —— English、简体中文、日本語。
 
 ## 控制权与凭据
@@ -77,6 +78,15 @@ Ark 是一个面向远程服务器的 SSH 客户端和终端，内置的 AI 智�
 
 Ark 会检查新版本并支持在应用内完成更新，所以首次安装之后不需要再手动下载。
 
+## 价格
+
+| 套餐 | 价格 | 包含 |
+| --- | --- | --- |
+| 免费版 | $0 | 登录、SSH / CLI 会话、SFTP 文件传输、主机数量不限、本地历史记录、多设备登录（不含同步） |
+| Basic | $1.99 / 月 | 免费版全部功能，智能体与单机驾驶舱，使用自有 API 密钥的自定义模型，本机经验卡片（加密存本机，按主机注入） |
+| Pro | $4.99 / 月 | Basic 全部功能。多设备云同步、跨服务器作业、定时任务、MCP 与 Skills 为该档规划能力，当前未交付。 |
+
+在 2026 年 11 月 30 日前注册可获得 Basic 免费试用。未订阅时账号会回到免费版。
 
 ## 常见问题
 
@@ -85,7 +95,7 @@ Ark 会检查新版本并支持在应用内完成更新，所以首次安装之�
 工作的智能体。
 
 **可以不使用 AI 功能吗？**
-可以。免费版涵盖 SSH 和 CLI 会话、SFTP 文件传输、不限数量的主机连接，以及本地历史记录。
+可以。免费版涵盖 SSH 和 CLI 会话、SFTP 文件传输、不限数量的主机连接、本地历史记录，以及不含同步的多设备登录。
 
 **我的 SSH 密钥存在哪里？**
 存在你自己的设备上。私钥、密码和自定义模型 API 密钥都不会被上传。
@@ -105,4 +115,4 @@ Ark 会检查新版本并支持在应用内完成更新，所以首次安装之�
 
 ---
 
-Ark 以英文优先发布，面向美国用户。它不在中国大陆的应用商店推广或上架；官网访问不受限制。
+Ark 面向全球用户，默认英语，并提供简体中文和日语。不在中国大陆的应用商店推广或上架；官网访问和使用不受限制。
