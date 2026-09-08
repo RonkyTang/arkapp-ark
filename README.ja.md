@@ -1,13 +1,12 @@
 <!--
-  Deliverable, not this repo's README.
-
-  Japanese translation of README.md. Copy into the public repo (suggested:
-  github.com/arkapp/ark) as README.ja.md.
+  Aligned Japanese copy. 2026-09-08 product decision: do not create a separate
+  github.com/arkapp/ark. The currently public git README is already used for SEO.
 
   The three language files carry the same claims, sections, and links; when one
   changes, change all three. Every claim must stay consistent with
   documents/GTM/website/WEBSITE_CONTENT_RATIONALE.md section 5: no unverified
   numbers, no competitor comparisons without a source and a date.
+-->
 -->
 
 [English](README.md) · [简体中文](README.zh-CN.md) · **日本語**
@@ -61,6 +60,7 @@ Ark はそれ単体で完結した SSH クライアントです。エージェ�
   追跡し、検証済みの事実とまだ不確かな点を区別して提示します。
 - **自分のモデルキーを使用** — カスタムモデルを設定でき、プロバイダーと API キーは
   あなたの管理下に置かれます。
+- **ローカル経験カード** — タスク終了後、抽出した経験をこの端末に保存できます。この端末で暗号化され、アカウントとホストに紐づき、調査の手がかりとしてだけ使われます。
 - **インターフェース言語** — English、简体中文、日本語。
 
 ## 制御と認証情報
@@ -91,6 +91,16 @@ Ark はそれ単体で完結した SSH クライアントです。エージェ�
 Ark は新しいバージョンを確認し、アプリ内から更新をインストールできます。初回インストール
 以降、手動でダウンロードする必要はありません。
 
+## 料金
+
+| プラン | 価格 | 内容 |
+| --- | --- | --- |
+| Free | $0 | サインイン、SSH / CLI セッション、SFTP ファイル転送、接続ホスト数無制限、ローカル履歴、複数デバイスでのサインイン（同期なし） |
+| Basic | $1.99 / 月 | Free のすべて、エージェントと単一サーバーコックピット、自分の API キーによるカスタムモデル、ローカル経験カード（この端末に暗号化保存、ホスト単位で注入） |
+| Pro | $4.99 / 月 | Basic のすべて。複数デバイスのクラウド同期、サーバー横断作業、スケジュールタスク、MCP と Skills はこのプランの予定機能であり、現在は未提供です。 |
+
+2026 年 11 月 30 日までに登録すると Basic の無料トライアルが利用できます。サブスクリプション
+がない場合、アカウントは Free に戻ります。
 
 ## よくある質問
 
@@ -100,7 +110,7 @@ Ark は新しいバージョンを確認し、アプリ内から更新をイン�
 
 **AI 機能を使わずに利用できますか。**
 できます。Free プランで SSH / CLI セッション、SFTP ファイル転送、接続ホスト数無制限、
-ローカル履歴をカバーしています。
+ローカル履歴、および同期なしの複数デバイス サインインをカバーしています。
 
 **SSH 鍵はどこに保存されますか。**
 あなたのデバイス上です。秘密鍵、パスワード、カスタムモデルの API キーはアップロード
@@ -121,5 +131,5 @@ Ark は新しいバージョンを確認し、アプリ内から更新をイン�
 
 ---
 
-Ark は米国のユーザー向けに英語を第一言語として公開しています。中国本土のアプリストアでの
-プロモーションや掲載は行っていません。ウェブサイトへのアクセスは制限されていません。
+Ark は世界中のユーザー向けに提供しています。既定言語は英語で、簡体字中国語と日本語も用意しています。中国本土のアプリストアでの
+プロモーションや掲載は行っていません。ウェブサイトへのアクセスと利用は制限されていません。
