@@ -8,7 +8,6 @@
   documents/GTM/website/WEBSITE_CONTENT_RATIONALE.md section 5: no unverified
   numbers, no competitor comparisons without a source and a date.
 -->
--->
 
 [English](README.md) · **简体中文** · [日本語](README.ja.md)
 
@@ -18,16 +17,17 @@ Ark 是一个面向远程服务器的 SSH 客户端和终端，内置的 AI 智�
 那台机器上工作。终端、SFTP 文件传输和服务器状态共用同一条真实连接，因此智能体
 从实时事实出发，而不是先让你描述自己的环境。
 
-**macOS 11+（Apple Silicon 与 Intel）· Windows x64 · 提供免费版**
+**macOS 12+（Apple Silicon 与 Intel）· Windows x64 · 提供免费版**
 
 [**下载 Ark**](https://arkapp.ai/#download) ·
+[Mac App Store](https://apps.apple.com/app/ark-ssh/id6803574965?mt=12) ·
 [智能体能做什么](https://arkapp.ai/ai-ssh-client) ·
 [macOS](https://arkapp.ai/ssh-client-mac) ·
 [Windows](https://arkapp.ai/ssh-client-windows) ·
 [更新日志](https://arkapp.ai/changelog)
 
 > 本仓库只存放文档和公开的问题追踪。Ark 本身是闭源的，因此这里不发布任何应用代码。
-> 欢迎在 [Issues](../../issues) 中提交缺陷报告和功能建议。
+> 欢迎在 [Issues](https://github.com/RonkyTang/napoleon/issues) 中提交缺陷报告和功能建议。
 
 ---
 
@@ -61,22 +61,23 @@ Ark 是一个面向远程服务器的 SSH 客户端和终端，内置的 AI 智�
 让智能体去操作一台真实服务器，前提是边界必须明确。以下是产品固有的行为，而不是
 需要你记得去打开的选项：
 
-- 没有你的明确确认，不会发生任何实质性改动，且一次确认只授权你眼前的这一个操作。
+- 交互式 Agent 的受控改动需要你逐次明确确认；本机定时任务只按你预先保存并授权的范围执行。
 - 在改动之前，Ark 会展示服务器、身份、目标对象、完整命令、预期影响，以及结果将如何验证。
-- SSH 私钥、密码和你的自定义模型 API 密钥都保留在你的设备上，智能体不会读取它们。
+- SSH 私钥、密码和你的自定义模型 API 密钥都保留在你的设备上，智能体不会读取它们。局域网配对只在你的设备之间传送，不经过 Ark 云。
 - 你可以随时中止一次运行，改在 CLI 里把工作做完。
 - 执行成功、技术验证和业务健康状况会分开报告，所以"命令跑通了"绝不会被说成"问题解决了"。
 
 ## 安装
 
-从 [arkapp.ai](https://arkapp.ai/#download) 下载对应系统的安装包。下载需要先登录。
+从 [arkapp.ai](https://arkapp.ai/#download) 下载对应系统的安装包。中国大陆以外也可从
+[Mac App Store](https://apps.apple.com/app/ark-ssh/id6803574965?mt=12) 安装。
 
 | 平台 | 系统要求 | 安装包 |
 | --- | --- | --- |
-| macOS | 11（Big Sur）或更高，Apple Silicon 或 Intel | 已签名的磁盘映像 |
+| macOS | 12（Monterey）或更高，Apple Silicon 或 Intel | 官网已签名磁盘映像，或中国大陆以外的 [Mac App Store](https://apps.apple.com/app/ark-ssh/id6803574965?mt=12) |
 | Windows | 10 或更高，x64 | NSIS 安装程序（`.exe`） |
 
-Ark 会检查新版本并支持在应用内完成更新，所以首次安装之后不需要再手动下载。
+官网直装包会检查新版本并支持在应用内完成更新。Mac App Store 版走商店更新。
 
 ## 价格
 
@@ -84,9 +85,11 @@ Ark 会检查新版本并支持在应用内完成更新，所以首次安装之�
 | --- | --- | --- |
 | 免费版 | $0 | 登录、SSH / CLI 会话、SFTP 文件传输、主机数量不限、本地历史记录、多设备登录（不含同步） |
 | Basic | $1.99 / 月 | 免费版全部功能，智能体与单机驾驶舱，使用自有 API 密钥的自定义模型，本机经验卡片（加密存本机，按主机注入） |
-| Pro | $4.99 / 月 | Basic 全部功能。多设备云同步、跨服务器作业、定时任务、MCP 与 Skills 为该档规划能力，当前未交付。 |
+| Pro | $4.99 / 月 | Basic 全部功能，加上本机定时任务，以及经局域网与桌面配对的 iOS / Android 配套客户端（浏览、上传、传输、预览远端图片和视频、确认后删除）。iOS 尚未在 App Store 列出。Android 不上 Google Play，官网 APK 尚未发布。多端设备数据同步、跨服务器作业、MCP 与 Skills 仍为规划。 |
 
-在 2026 年 11 月 30 日前注册可获得 Basic 免费试用。未订阅时账号会回到免费版。
+2026 年 11 月 30 日前注册的账号可获得活动 Basic 权益。活动不会自动续费或扣款；活动结束时没有付费订阅的账号会回到 Free。
+
+付费套餐按月计费，默认自动续费，可随时取消；取消后当期仍有效，到期回到 Free。官网和直装版付款由 Stripe 处理；Mac App Store 版按 Apple 商店规则办理，价格以商店显示为准。模型费用由你与模型服务商结算，不计入 Ark 套餐。
 
 ## 常见问题
 
@@ -98,17 +101,20 @@ Ark 会检查新版本并支持在应用内完成更新，所以首次安装之�
 可以。免费版涵盖 SSH 和 CLI 会话、SFTP 文件传输、不限数量的主机连接、本地历史记录，以及不含同步的多设备登录。
 
 **我的 SSH 密钥存在哪里？**
-存在你自己的设备上。私钥、密码和自定义模型 API 密钥都不会被上传。
+存在你自己的设备上。私钥、密码和自定义模型 API 密钥都不会被上传。局域网配对只在你的设备之间传送，不经过 Ark 云。
 
 **Ark 使用哪些模型？**
 你使用自己的 API 密钥，因此供应商和密钥始终属于你。
 
 **支持 Linux 吗？**
-暂不支持。目前已发布的目标平台是 macOS 和 Windows x64。
+目前没有 Linux 桌面客户端；你可以在 macOS 或 Windows 上使用 Ark，通过 SSH 连接 Linux 服务器。macOS 也可在中国大陆以外的 Mac App Store 获取。Pro 含 iOS / Android 配套客户端，经局域网与桌面配对；iOS 商店尚未列出；Android 不上 Google Play，官网 APK 尚未发布。
+
+**如何订阅和取消？**
+付费套餐按月计费，默认自动续费。可随时取消；取消后当期仍有效，到期回到 Free。官网和直装版付款由 Stripe 处理；Mac App Store 版按 Apple 商店规则办理。模型费用由你与模型服务商结算。
 
 ## 反馈与联系
 
-- 缺陷与功能建议：[Issues](../../issues)
+- 缺陷与功能建议：[Issues](https://github.com/RonkyTang/napoleon/issues)
 - 邮箱：<official@arkapp.ai>
 - [服务条款](https://arkapp.ai/#legal-tos) ·
   [隐私政策](https://arkapp.ai/#legal-privacy)
